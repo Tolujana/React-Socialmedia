@@ -1,7 +1,10 @@
 import React from "react";
 import styles from "./Post.module.css";
 import PublicIcon from "@mui/icons-material/Public";
-import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
+import MoreMenu from "../moreMenu/MoreMenu";
+import ThumbUpIcon from "@mui/icons-material/ThumbUp";
+import ChatBubbleOutlineIcon from "@mui/icons-material/ChatBubbleOutline";
+import ReplyIcon from "@mui/icons-material/Reply";
 
 const Post = () => {
   return (
@@ -18,23 +21,49 @@ const Post = () => {
             </div>
           </div>
 
-          <MoreHorizIcon className={styles.menu} />
+          <MoreMenu />
         </div>
         <div className={styles.postMiddle}>
           <span className={styles.postText}>This is my first post </span>
           <img
             src="assets/persons/3.jpg"
             alt=""
-            className={styles.postcontentImg}
+            className={styles.postContentImg}
           />
         </div>
         <div className={styles.postBottom}>
-          <div className={styles.postBottomStats}></div>
-          <div className={styles.postActions}>
-            <div className={styles.postBottomLeft}></div>
-            <div className={styles.postBottomCenter}></div>
-            <div className={styles.postBottomaRight}></div>
+          <div className={styles.postBottomStats}>
+            <div className={styles.likes}>
+              <img className={styles.postLike} src="assets/likes.png" alt="" />
+              <span className={styles.likesCounter}>966</span>
+            </div>
+            <div className={styles.counters}>
+              <span className={styles.commentCounter}>2.1k Comments</span>
+              <span className={styles.shareCounter}>998 Shares</span>
+            </div>
           </div>
+          <hr className={styles.postLine} />
+          <div className={styles.postActions}>
+            <div className={styles.postBottomAction}>
+              <ThumbUpIcon />
+              <div className={styles.like} id="">
+                Like
+              </div>
+            </div>
+            <div className={styles.postBottomAction}>
+              <ChatBubbleOutlineIcon />
+              <div className={styles.comment} id="">
+                Comment
+              </div>
+            </div>
+            <div className={styles.postBottomAction}>
+              <ReplyIcon />
+              <div className={styles.share} id="">
+                Share
+              </div>
+            </div>
+          </div>
+          <hr className={styles.postLine} />
           <div className={styles.postBottomcomments}></div>
         </div>
       </div>

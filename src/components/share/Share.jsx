@@ -43,12 +43,24 @@ function Share() {
           <span className={styles.chatText}>Create room</span>
         </div>
         <div className={styles.friends}>
-          <img src="assets/persons/1.jpg" alt="" className={styles.chatImg} />
-          <img src="assets/persons/1.jpg" alt="" className={styles.chatImg} />
-          <img src="assets/persons/1.jpg" alt="" className={styles.chatImg} />
-          <img src="assets/persons/1.jpg" alt="" className={styles.chatImg} />
-          <img src="assets/persons/1.jpg" alt="" className={styles.chatImg} />
-          <img src="assets/persons/1.jpg" alt="" className={styles.chatImg} />
+          <div className={styles.imgContainer}>
+            <img src="assets/persons/1.jpg" alt="" className={styles.chatImg} />
+          </div>
+          <div className={styles.imgContainer}>
+            <img src="assets/persons/1.jpg" alt="" className={styles.chatImg} />
+          </div>
+          <div className={styles.imgContainer}>
+            <img src="assets/persons/1.jpg" alt="" className={styles.chatImg} />
+          </div>
+          <div className={styles.imgContainer}>
+            <img src="assets/persons/1.jpg" alt="" className={styles.chatImg} />
+          </div>
+          <div className={styles.imgContainer}>
+            <img src="assets/persons/1.jpg" alt="" className={styles.chatImg} />
+          </div>
+          <div className={styles.imgContainer}>
+            <img src="assets/persons/1.jpg" alt="" className={styles.chatImg} />
+          </div>
         </div>
       </div>
     </div>

@@ -1,6 +1,6 @@
 .share {
   /* margin: 0px 20px; */
-  width: 82%;
+  width: 500px;
 }
 .shareWrapper {
   /* width: 82%; */
@@ -13,17 +13,17 @@
 }
 .chatImg {
   height: 40px;
-  width: 40px;
+  max-width: 80%;
   border-radius: 50%;
   object-fit: cover;
-  margin-right: 10px;
+  /* margin-right: 10px; */
 }
 .sharepics {
   height: 40px;
-  width: 40px;
+  /* width: 40px; */
   border-radius: 50%;
   object-fit: cover;
-  margin-right: 10px;
+  /* margin-right: 10px; */
 }
 .shareTop {
   display: flex;
@@ -99,11 +99,18 @@
 .friends {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 .chatText {
   font-size: 15px;
 }
 .chatIcon {
   margin-right: 8px;
+}
+.likesCounter {
+  margin-left: 15px;
+}
+.imgContainer {
+  /* margin-righ; */
+  width: 50px;
 }
